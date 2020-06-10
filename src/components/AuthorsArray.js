@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function AuthorsArray ({ authors }) {
-  const arr = authors && authors.split(',').map((x) => x.trim())
+  const arr = authors && authors.map((x) => x.trim())
   const classes = useStyles()
   return (
     <div>
